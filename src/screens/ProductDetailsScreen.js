@@ -33,8 +33,9 @@ const ProductDetailsScreen = ({ route }) => {
   }
 
   if (error) {
-    return <Text>Error fetching the product. {error.error}</Text>;
+    return <Text>Error fetching the product. {String(error)}</Text>;
   }
+  
 
   return (
     <View>
